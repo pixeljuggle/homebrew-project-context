@@ -5,21 +5,21 @@
 class ProjectContext < Formula
   desc "Zero-dependency CLI that generates a perfect project-context.md for LLMs, code reviews, or documentation."
   homepage "https://github.com/pixeljuggle/project-context"
-  version "0.0.12"
+  version "0.0.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.12/project-context_0.0.12_darwin_amd64.tar.gz"
-      sha256 "dfea42f4ac1aba2d918cbeb6a1f492b67cb9a1d3f4e0d5f94d3677fa99ec4ae7"
+      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.13/project-context_0.0.13_darwin_amd64.tar.gz"
+      sha256 "356e77b4731119f5d98e4e51b7de92d79aa96d8ef3323c31d26545e06d9121ec"
 
       define_method(:install) do
         bin.install "project-context"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.12/project-context_0.0.12_darwin_arm64.tar.gz"
-      sha256 "88b926b8dafca8ff40f15f9081a4c959ddd9a1a0706ad10df09daa487b079688"
+      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.13/project-context_0.0.13_darwin_arm64.tar.gz"
+      sha256 "043f6e26450a6d3ba56ab1415970e28e24ff1d11a78cd59e8f1c00d28da7d3b1"
 
       define_method(:install) do
         bin.install "project-context"
@@ -29,15 +29,15 @@ class ProjectContext < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.12/project-context_0.0.12_linux_amd64.tar.gz"
-      sha256 "516d16a36dde7c41f285c7a241594c7f4645c65cd93fdfa8b2a9c86a706b9ea0"
+      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.13/project-context_0.0.13_linux_amd64.tar.gz"
+      sha256 "4982bd37c17871c5d58ae6ce63529f8af4b5d472185789bd259f1862ea59dbd4"
       define_method(:install) do
         bin.install "project-context"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.12/project-context_0.0.12_linux_arm64.tar.gz"
-      sha256 "1dcf1791f97ad86969ee9648266d25191fb210e41b69d70f83ac23dae57a179d"
+      url "https://github.com/pixeljuggle/project-context/releases/download/v0.0.13/project-context_0.0.13_linux_arm64.tar.gz"
+      sha256 "8bbae3ec5b6d06f0eb89c304e652648fb8730d1856895a6d45d4b0a921f3ba40"
       define_method(:install) do
         bin.install "project-context"
       end
